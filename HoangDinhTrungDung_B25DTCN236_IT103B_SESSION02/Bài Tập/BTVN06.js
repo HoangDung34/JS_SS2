@@ -4,7 +4,7 @@ let status = prompt("Nhập tình trạng sách (có sẵn/đã mượn/không c
 let borrowDays = Number(prompt("Nhập số ngày mượn:"));
 let card = prompt("Bạn có thẻ thư viện không? (Có/Không):");
 
-if (status === "available" && card === "Có") {
+if (status === "có sẵn" && card === "Có") {
     console.log("Chúc mừng, bạn có thể mượn sách này");
 } else if (bookStatus === "đã mượn" && borrowDays < 30) {
     if (card === "Có") {
@@ -17,3 +17,4 @@ if (status === "available" && card === "Có") {
 } else {
     console.log("Thông tin không hợp lệ, vui lòng nhập lại");
 }
+
